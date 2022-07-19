@@ -1,0 +1,22 @@
+{
+  "name": "monokai-vim-css",
+  "version": "0.0.1",
+  "description": "because I want my websites to look like my editor",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjdavenport/monokai-vim-css.git"
+  },
+  "author": "Torrance Davenport <tjdavenport2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjdavenport/monokai-vim-css/issues"
+  },
+  "homepage": "https://github.com/tjdavenport/monokai-vim-css#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
