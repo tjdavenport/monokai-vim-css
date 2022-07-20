@@ -14,21 +14,39 @@
   --c-purple: hsl(var(--h-purple), 100%, 75%);
 }
 
+.pink { color: var(--c-pink); }
+.text-bold { font-weight: 700; }
+
+.vc-numline {
+  border-collapse: collapse;
+}
+.vc-numline__num {
+  border: none;
+  text-align: right;
+  padding: 2px 4px;
+  background-color: hsl(0, 0%, 17%);
+  color: hsl(0, 0%, 60%);
+}
+.vc-numline__line {
+  padding: 2px 4px;
+  color: white;
+}
+
 .vc-tabs {
   display: flex;
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 17%);
 }
 
 [class^=vc-tabs__tab] {
   padding: 4px 8px;
-  color: hsl(0, 0%, 5%);
+  color: hsl(0, 0%, 0%);
   text-decoration: none;
   font-weight: 700;
 }
 
 .vc-tabs__tab--active {
   background-color: hsl(0, 0%, 25%);
-  color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 60%);
 }
 
 body {
