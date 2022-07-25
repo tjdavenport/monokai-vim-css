@@ -26,33 +26,56 @@
   </nav>
 
   <main>
-    <section>
-      <table class="vc-numline">
-        <tr>
-          <td class="vc-numline__num">
-            1
-          </td>
-          <td class="vc-numline__line">
-            <span class="pink text-bold">SomePerson023</span>: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          </td>
-        </tr>
-        <tr>
-          <td class="vc-numline__num">
-            343
-          </td>
-          <td class="vc-numline__line">
-            loreum ipsum dolar
-          </td>
-        </tr>
-        <tr>
-          <td class="vc-numline__num">
-            1
-          </td>
-          <td class="vc-numline__line">
-            loreum ipsum dolar
-          </td>
-        </tr>
-      </table>
+    <section style="display:flex;">
+      <div style="width:50%;display:flex;flex-direction:column;">
+        <form class="vc-radios" style="flex-grow:1;">
+          <div class="vc-radios__choice">
+            <input type="radio" name="papermc-uri" id="radio-latest" checked value="latest" class="vc-radios__input"/>
+            <span class="vc-radios__cursor">></span>
+            <label for="radio-latest" class="vc-radios__label">
+              latest (recommended)
+            </label>
+          </div>
+          <div class="vc-radios__choice">
+            <input type="radio" name="papermc-uri" id="radio-other" value="other" class="vc-radios__input"/>
+            <span class="vc-radios__cursor">></span>
+            <label for="radio-other" class="vc-radios__label">
+              select version & build
+            </label>
+          </div>
+        </form>
+        <div style="padding:2px;background-color:var(--c-grey);">
+          <span class="cyan">setup</span> <span class="grey-light">> version selection</span>
+        </div>
+      </div>
+      <div style="width:50%">
+        <table class="vc-numline">
+          <tr>
+            <td class="vc-numline__num">
+              1
+            </td>
+            <td class="vc-numline__line">
+              <span class="pink text-bold">SomePerson023</span>: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            </td>
+          </tr>
+          <tr>
+            <td class="vc-numline__num">
+              343
+            </td>
+            <td class="vc-numline__line">
+              loreum ipsum dolar
+            </td>
+          </tr>
+          <tr>
+            <td class="vc-numline__num">
+              1
+            </td>
+            <td class="vc-numline__line">
+              loreum ipsum dolar
+            </td>
+          </tr>
+        </table>
+      </div>
     </section>
   </main>
 

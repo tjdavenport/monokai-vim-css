@@ -12,11 +12,17 @@
   --c-cyan: hsl(var(--h-cyan), 81%, 67%);
   --c-orange: hsl(var(--h-orange), 98%, 56%);
   --c-purple: hsl(var(--h-purple), 100%, 75%);
+
+  --c-grey: hsl(0, 0%, 17%);
+  --c-grey-light: hsl(0, 0%, 60%);
 }
 
+.cyan { color: var(--c-cyan); }
 .pink { color: var(--c-pink); }
+.grey-light { color: var(--c-grey-light); }
 .text-bold { font-weight: 700; }
 
+/* numline */
 .vc-numline {
   border-collapse: collapse;
 }
@@ -24,17 +30,19 @@
   border: none;
   text-align: right;
   padding: 2px 4px;
-  background-color: hsl(0, 0%, 17%);
-  color: hsl(0, 0%, 60%);
+  background-color: var(--c-grey);
+  color: var(--c-grey-light);
 }
 .vc-numline__line {
   padding: 2px 4px;
   color: white;
 }
+/* /numline */
 
+/* tabs */
 .vc-tabs {
   display: flex;
-  background-color: hsl(0, 0%, 17%);
+  background-color: var(--c-grey);
 }
 
 [class^=vc-tabs__tab] {
@@ -46,7 +54,35 @@
 
 .vc-tabs__tab--active {
   background-color: hsl(0, 0%, 25%);
-  color: hsl(0, 0%, 60%);
+  color: var(--c-grey-light);
+}
+/* /tabs */
+
+/* /radios */
+.vc-radios {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  line-height: 20px;
+}
+.vc-radios__label {
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+.vc-radios__input {
+  position: absolute;
+  opacity: 0;
+}
+.vc-radios__input:checked + .vc-radios__cursor {
+  visibility: visible;
+}
+.vc-radios__cursor {
+  visibility: hidden;
+  background-color: var(--c-grey);
+  color: var(--c-grey-light);
+  display: inline-block;
+  padding: 0 4px;
 }
 
 body {
