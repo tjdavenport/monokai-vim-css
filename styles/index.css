@@ -13,8 +13,10 @@
   --c-orange: hsl(var(--h-orange), 98%, 56%);
   --c-purple: hsl(var(--h-purple), 100%, 75%);
 
-  --c-grey: hsl(0, 0%, 17%);
-  --c-grey-light: hsl(0, 0%, 60%);
+  --c-grey-15: hsl(0, 0%, 15%);
+  --c-grey-30: hsl(0, 0%, 30%);
+  --c-grey-45: hsl(0, 0%, 45%);
+  --c-grey-60: hsl(0, 0%, 60%);
 }
 
 .cyan { color: var(--c-cyan); }

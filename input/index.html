@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>monokai-vim-css</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/typography.css">
+  <link rel="stylesheet" href="/styles/palette.css">
+  <link rel="stylesheet" href="/styles/input.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body style="background-color: black;">
+  <div style="padding: 32px;">
+    <div class="mv-input__wrap">
+      <input class="mv-input" type="text"/>
+      <div class="mv-input__animator--explode"></div>
+      <div class="mv-input__animator"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/scripts/input.js"></script>
+  <script type="text/javascript">
+    const input = document.querySelector('input');
+    const target = document.querySelector('.mv-input__animator');
+
+    keyPressClassPoke(input, target, 'mv-input__animator--surge');
+  </script>
+</body>
+
+</html>
