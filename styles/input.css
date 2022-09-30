@@ -1,20 +1,6 @@
-.mv-input:focus + .mv-input__animator--explode {
-  animation-name: explode;
-  animation-duration: 0.5s;
-}
-.mv-input__animator--surge {
-  animation-name: surge;
-  animation-duration: 1s;
-}
-[class^=mv-input__animator]{
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  pointer-events: none;
-}
-.mv-input__wrap {
+.mv-input__root {
+  --c-of-surge: var(--c-grey-45);
+
   border-left: 0px var(--c-purple) solid;
   border-right: 0px var(--c-purple) solid;
   display: inline-block;
@@ -31,20 +17,36 @@
 .mv-input:focus-visible {
   outline: none;
 }
+.mv-input:focus + .mv-input__animator--explode {
+  animation-name: explode;
+  animation-duration: 0.5s;
+}
+.mv-input__animator--surge {
+  animation-name: surge;
+  animation-duration: 1s;
+}
+[class^=mv-input__animator]{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
 
 @keyframes surge {
   from {
     top: 0px;
     bottom: 0px;
-    border-top: 0px var(--c-grey-45) solid;
-    border-bottom: 0px var(--c-grey-45) solid;
+    border-top: 0px var(--c-of-surge) solid;
+    border-bottom: 0px var(--c-of-surge) solid;
     opacity: 1.0;
   }
   to {
     top: -16px;
     bottom: -16px;
-    border-top: 16px var(--c-grey-45) solid;
-    border-bottom: 16px var(--c-grey-45) solid;
+    border-top: 16px var(--c-of-surge) solid;
+    border-bottom: 16px var(--c-of-surge) solid;
     opacity: 0.0;  
   }
 }

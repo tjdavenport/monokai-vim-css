@@ -18,18 +18,18 @@
 
 <body style="background-color: black;">
   <div style="padding: 32px;">
-    <div class="mv-input__wrap">
-      <input class="mv-input" type="text"/>
-      <div class="mv-input__animator--explode"></div>
-      <div class="mv-input__animator"></div>
-    </div>
+    <form>
+      <div class="mv-input__root">
+        <input required pattern="[a-z]" class="mv-input" type="text"/>
+        <div class="mv-input__animator--explode"></div>
+        <div class="mv-input__animator"></div>
+      </div>
+      <button type="submit">submit</button>
+    </form>
   </div>
   <script type="text/javascript" src="/scripts/input.js"></script>
   <script type="text/javascript">
-    const input = document.querySelector('input');
-    const target = document.querySelector('.mv-input__animator');
-
-    keyPressClassPoke(input, target, 'mv-input__animator--surge');
+    mvInput(document.querySelector('.mv-input__root'));
   </script>
 </body>
 
