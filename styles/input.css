@@ -1,6 +1,16 @@
+.mv-input:invalid ~ .mv-input__animator {
+  --surge-color: var(--c-yellow);
+}
+.mv-input ~ .mv-input__animator {
+  --surge-color: var(--c-grey-45);
+}
 .mv-input:focus + .mv-input__animator--explode {
+  --explode-color: var(--c-purple);
   animation-name: explode;
   animation-duration: 0.5s;
+}
+.mv-input:not(:placeholder-shown).mv-input:invalid + .mv-input__animator--explode {
+  --explode-color: var(--c-pink);
 }
 .mv-input__animator--surge {
   animation-name: surge;
@@ -36,15 +46,15 @@
   from {
     top: 0px;
     bottom: 0px;
-    border-top: 0px var(--c-grey-45) solid;
-    border-bottom: 0px var(--c-grey-45) solid;
+    border-top: 0px var(--surge-color) solid;
+    border-bottom: 0px var(--surge-color) solid;
     opacity: 1.0;
   }
   to {
     top: -16px;
     bottom: -16px;
-    border-top: 16px var(--c-grey-45) solid;
-    border-bottom: 16px var(--c-grey-45) solid;
+    border-top: 16px var(--surge-color) solid;
+    border-bottom: 16px var(--surge-color) solid;
     opacity: 0.0;  
   }
 }
@@ -53,15 +63,15 @@
     left: 0px;
     right: 0px;
     background-color: var(--c-grey-30);
-    border-left: 0px var(--c-purple) solid;
-    border-right: 0px var(--c-purple) solid;
+    border-left: 0px var(--explode-color) solid;
+    border-right: 0px var(--explode-color) solid;
     opacity: 1.0;
   }
   to {
     left: -16px;
     right: -16px;
-    border-left: 16px var(--c-purple) solid;
-    border-right: 16px var(--c-purple) solid;
+    border-left: 16px var(--explode-color) solid;
+    border-right: 16px var(--explode-color) solid;
     opacity: 0.0;  
     background-color: transparent;
   }

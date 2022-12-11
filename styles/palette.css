@@ -4,12 +4,14 @@
   --h-cyan: 190;
   --h-orange: 32;
   --h-purple: 261;
+  --h-yellow: 54;
 
   --c-pink: hsl(var(--h-pink), 95%, 56%);
   --c-green: hsl(var(--h-green), 76%, 53%);
   --c-cyan: hsl(var(--h-cyan), 81%, 67%);
   --c-orange: hsl(var(--h-orange), 98%, 56%);
   --c-purple: hsl(var(--h-purple), 100%, 75%);
+  --c-yellow: hsl(var(--h-yellow), 70%, 68%);
 
   --c-grey-15: hsl(0, 0%, 15%);
   --c-grey-30: hsl(0, 0%, 30%);
