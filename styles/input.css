@@ -1,22 +1,3 @@
-.mv-input__root {
-  --c-of-surge: var(--c-grey-45);
-
-  border-left: 0px var(--c-purple) solid;
-  border-right: 0px var(--c-purple) solid;
-  display: inline-block;
-  position: relative;
-}
-.mv-input {
-  font-family: 'Inconsolata';
-  background-color: var(--c-grey-15);
-  color: #fff;
-  border: none;
-  padding: 0.5rem;
-  border: 4px var(--c-grey-45) solid;
-}
-.mv-input:focus-visible {
-  outline: none;
-}
 .mv-input:focus + .mv-input__animator--explode {
   animation-name: explode;
   animation-duration: 0.5s;
@@ -33,20 +14,37 @@
   bottom: 0px;
   pointer-events: none;
 }
+.mv-input__wrap {
+  border-left: 0px var(--c-purple) solid;
+  border-right: 0px var(--c-purple) solid;
+  display: inline-block;
+  position: relative;
+}
+.mv-input {
+  font-family: 'Inconsolata';
+  background-color: var(--c-grey-15);
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border: 4px var(--c-grey-45) solid;
+}
+.mv-input:focus-visible {
+  outline: none;
+}
 
 @keyframes surge {
   from {
     top: 0px;
     bottom: 0px;
-    border-top: 0px var(--c-of-surge) solid;
-    border-bottom: 0px var(--c-of-surge) solid;
+    border-top: 0px var(--c-grey-45) solid;
+    border-bottom: 0px var(--c-grey-45) solid;
     opacity: 1.0;
   }
   to {
     top: -16px;
     bottom: -16px;
-    border-top: 16px var(--c-of-surge) solid;
-    border-bottom: 16px var(--c-of-surge) solid;
+    border-top: 16px var(--c-grey-45) solid;
+    border-bottom: 16px var(--c-grey-45) solid;
     opacity: 0.0;  
   }
 }
